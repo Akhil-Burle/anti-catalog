@@ -1,0 +1,21 @@
+@import "tailwindcss";
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #020617; /* Matches slate-950 */
+  overflow-x: hidden;
+}
+
+/* Custom utility to hide scrollbars while keeping functionality */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
